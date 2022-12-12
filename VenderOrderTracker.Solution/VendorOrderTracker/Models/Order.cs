@@ -6,14 +6,14 @@ namespace VendorOrder.Models
     public string Title {get;set;}
     public string Description {get;set;}
     public int Price {get;set;}
-    public DateTime Date {get;set;}
+    public DateTime Today {get;}
 
     public Order(string title, string description, int price)
     {
       Title = title;
       Description = description;
       Price = price;
-      Date = DateTime.Today;
+      Today = DateTime.Today;
     }
   }
 }
